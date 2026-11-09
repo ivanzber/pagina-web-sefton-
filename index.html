@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sefton D.C. S.A.S. | Tecnología, dispositivos móviles y accesorios</title>
+  <meta name="description" content="Sefton D.C. S.A.S. distribuye tecnología, dispositivos móviles y accesorios de marcas como Samsung, Apple, Xiaomi, Motorola, Lenovo y HP. Sede en Cota, Cundinamarca, con presencia en Bogotá.">
+  <meta property="og:title" content="Sefton D.C. S.A.S.">
+  <meta property="og:description" content="Tecnología, dispositivos móviles y accesorios para empresas y personas. Cota y Bogotá.">
+  <meta property="og:image" content="assets/logo-sefton.png">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== ENCABEZADO ===== -->
+  <header class="header" id="inicio">
+    <div class="container header__inner">
+      <a href="#inicio" class="header__logo" aria-label="Sefton, ir al inicio">
+        <img src="assets/logo-sf.png" alt="" width="67" height="24">
+        <span>SEFTON</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="menu">
+        <a href="#nosotros">Nosotros</a>
+        <a href="#productos">Productos</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#" class="btn btn--primary btn--sm" data-wa>Escríbenos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="hero__slashes" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="eyebrow">Cota · Bogotá</p>
+          <h1>Tecnología que mueve a tu empresa</h1>
+          <p class="hero__lead">
+            Distribuimos smartphones, computadores corporativos, impresoras, patinetas eléctricas
+            y accesorios de las marcas que ya conoces, para empresas y personas.
+          </p>
+          <div class="hero__actions">
+            <a href="#" class="btn btn--primary" data-wa>
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.3A8.4 8.4 0 1 1 21 11.5Z"/></svg>
+              Cotizar por WhatsApp
+            </a>
+            <a href="#productos" class="btn btn--ghost">Ver productos</a>
+          </div>
+        </div>
+        <div class="hero__logo">
+          <img src="assets/logo-sefton.png" alt="Logo de Sefton Bogotá" width="775" height="430">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MARCAS =====
+         El carrusel se arma desde la lista MARCAS en script.js.
+         Los logos van en assets/marcas/ (ej: samsung.svg). Si un logo
+         no existe todavía, se muestra el nombre de la marca. -->
+    <section class="brands" aria-label="Marcas que distribuimos">
+      <div class="container brands__head">
+        <span class="brands__label">Marcas que distribuimos</span>
+      </div>
+      <div class="marquee">
+        <ul class="marquee__track" id="marcas"></ul>
+      </div>
+    </section>
+
+    <!-- ===== NOSOTROS ===== -->
+    <section class="section" id="nosotros">
+      <div class="container about">
+        <div class="about__text">
+          <p class="eyebrow">Nosotros</p>
+          <h2>Una empresa colombiana enfocada en tecnología</h2>
+          <p>
+            <strong>Sefton D.C. S.A.S.</strong> es una empresa colombiana con sede principal en
+            Cota, Cundinamarca, y presencia en Bogotá. Nos dedicamos al comercio al por mayor de
+            equipos, accesorios electrónicos y de telecomunicaciones.
+          </p>
+          <p>
+            Acompañamos a empresas y clientes en la compra de dispositivos móviles, equipos
+            y todo el ecosistema tecnológico que necesitan.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRODUCTOS ===== -->
+    <section class="section section--alt" id="productos">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Productos</p>
+          <h2>Lo que distribuimos</h2>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <svg class="card__icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>
+            <h3>Smartphones</h3>
+            <p>Celulares de gama media y alta para uso personal y corporativo.</p>
+            <a href="#" class="card__link" data-wa data-wa-msg="Hola Sefton, quiero cotizar smartphones.">Cotizar →</a>
+          </article>
+
+          <article class="card">
+            <svg class="card__icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="4" y="4.5" width="16" height="11" rx="1.5"/><path d="M2 19.5h20"/></svg>
+            <h3>Computadores corporativos</h3>
+            <p>Portátiles y equipos de escritorio para equipos de trabajo de cualquier tamaño.</p>
+            <a href="#" class="card__link" data-wa data-wa-msg="Hola Sefton, quiero cotizar computadores corporativos.">Cotizar →</a>
+          </article>
+
+          <article class="card">
+            <svg class="card__icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 8V3h10v5"/><rect x="3" y="8" width="18" height="8" rx="1.5"/><path d="M7 13h10v8H7z"/></svg>
+            <h3>Impresoras</h3>
+            <p>Equipos de impresión para oficina y hogar.</p>
+            <a href="#" class="card__link" data-wa data-wa-msg="Hola Sefton, quiero cotizar impresoras.">Cotizar →</a>
+          </article>
+
+          <article class="card">
+            <svg class="card__icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="5" cy="18" r="2.5"/><circle cx="19" cy="18" r="2.5"/><path d="M7.5 18h9M15 5h2.5l1.5 13"/></svg>
+            <h3>Patinetas eléctricas</h3>
+            <p>Movilidad eléctrica práctica para la ciudad.</p>
+            <a href="#" class="card__link" data-wa data-wa-msg="Hola Sefton, quiero cotizar patinetas eléctricas.">Cotizar →</a>
+          </article>
+
+          <article class="card">
+            <svg class="card__icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/></svg>
+            <h3>Accesorios y ecosistema</h3>
+            <p>Todo lo que complementa tus dispositivos dentro del ecosistema de cada marca.</p>
+            <a href="#" class="card__link" data-wa data-wa-msg="Hola Sefton, quiero información sobre accesorios.">Cotizar →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GALERÍA =====
+         Para cambiar o agregar fotos: guarda la imagen en assets/galeria/
+         y copia una línea <button class="gallery__item">...</button>.
+         Las fotos se muestran cuadradas; al hacer clic se ven completas. -->
+    <section class="section" id="galeria">
+      <div class="container">
+        <div class="section__head section__head--row">
+          <div>
+            <p class="eyebrow">Galería</p>
+            <h2>Nuestros productos</h2>
+          </div>
+          <a href="https://www.instagram.com/seftondc/" class="btn btn--ghost btn--sm" target="_blank" rel="noopener">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></svg>
+            Ver más en Instagram
+          </a>
+        </div>
+
+        <div class="gallery">
+          <button class="gallery__item"><img src="assets/galeria/celular.jpg" alt="Smartphones"></button>
+          <button class="gallery__item"><img src="assets/galeria/computadores.jpg" alt="Computadores"></button>
+          <button class="gallery__item"><img src="assets/galeria/impresora.jpg" alt="Impresoras"></button>
+          <button class="gallery__item"><img src="assets/galeria/patineta.jpg" alt="Patinetas eléctricas"></button>
+          <button class="gallery__item"><img src="assets/galeria/accesorios.jpg" alt="Accesorios"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section class="cta" id="contacto">
+      <div class="container cta__inner">
+        <div>
+          <h2>¿Necesitas equipos para tu empresa?</h2>
+          <p>Escríbenos y te ayudamos con tu cotización.</p>
+          <p class="cta__place">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            Cota, Cundinamarca · Bogotá D.C.
+          </p>
+        </div>
+        <div class="cta__actions">
+          <a href="#" class="btn btn--dark" data-wa>
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.3A8.4 8.4 0 1 1 21 11.5Z"/></svg>
+            WhatsApp
+          </a>
+          <a href="https://www.instagram.com/seftondc/" class="btn btn--outline-dark" target="_blank" rel="noopener">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></svg>
+            @seftondc
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== PIE DE PÁGINA ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <img src="assets/logo-sf.png" alt="Sefton" width="67" height="24">
+      <p>Sefton D.C. S.A.S.</p>
+      <p>© <span id="year">2026</span> Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ===== BOTÓN FLOTANTE DE WHATSAPP ===== -->
+  <a href="#" class="wa-float" data-wa aria-label="Escríbenos por WhatsApp">
+    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.3A8.4 8.4 0 1 1 21 11.5Z"/><path d="M8.5 9.5c0 3 2.5 5.5 5.5 5.5l1.2-1.4-1.8-.9-.8.8a4 4 0 0 1-2.3-2.3l.8-.8-.9-1.8z" class="fill"/></svg>
+    <span>WhatsApp</span>
+  </a>
+
+  <!-- Visor de la galería -->
+  <dialog class="lightbox" aria-label="Imagen ampliada">
+    <button class="lightbox__close" aria-label="Cerrar">×</button>
+    <img src="" alt="">
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
