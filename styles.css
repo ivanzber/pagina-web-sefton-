@@ -117,8 +117,9 @@ svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width:
 .marquee__item { flex: 0 0 auto; height: 44px; display: flex; align-items: center; margin-right: 64px; }
 .marquee__item img {
   height: 32px; width: auto; max-width: 130px; object-fit: contain;
-  filter: brightness(0) invert(1); opacity: .65; transition: opacity .2s;
+  opacity: .85; transition: opacity .2s;
 }
+.marquee__item img.mono { filter: brightness(0) invert(1); }
 .marquee__item:hover img { opacity: 1; }
 .marquee__name { font-family: var(--titulos); font-size: 18px; letter-spacing: .12em; color: var(--blanco); opacity: .75; white-space: nowrap; }
 .marquee__more { color: var(--verde); opacity: 1; }

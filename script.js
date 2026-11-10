@@ -23,20 +23,20 @@ if (!WHATSAPP_NUMERO) {
 
 const MARCAS = [
   { nombre: "Samsung",  logo: "samsung.svg" },
-  { nombre: "Apple",    logo: "apple.svg" },
+  { nombre: "Apple",    logo: "apple.svg", mono: true },
   { nombre: "Xiaomi",   logo: "xiaomi.svg" },
   { nombre: "POCO",     logo: "poco.svg" },
-  { nombre: "Honor",    logo: "honor.svg" },
+  { nombre: "Honor",    logo: "honor.svg", mono: true },
   { nombre: "Motorola", logo: "motorola.svg" },
-  { nombre: "OPPO",     logo: "oppo.svg" },
+  { nombre: "OPPO",     logo: "oppo.svg", mono: true },
   { nombre: "realme",   logo: "realme.svg" },
   { nombre: "Tecno",    logo: "tecno.svg" },
-  { nombre: "Infinix",  logo: "infinix.svg" },
+  { nombre: "Infinix",  logo: "infinix.svg", mono: true },
   { nombre: "JBL",      logo: "jbl.svg" },
   { nombre: "Kalley",   logo: "kalley.svg" },
   { nombre: "TCL",      logo: "tcl.svg" },
   { nombre: "Lenovo",   logo: "lenovo.svg" },
-  { nombre: "HP",       logo: "hp.svg" },
+  { nombre: "HP",       logo: "hp.svg", mono: true },
   { nombre: "Acer",     logo: "acer.svg" }
 ];
 
@@ -49,6 +49,7 @@ function crearMarca(marca, duplicado) {
   img.src = "assets/marcas/" + marca.logo;
   img.alt = duplicado ? "" : marca.nombre;
   img.title = marca.nombre;
+  if (marca.mono) img.classList.add("mono");
   img.onerror = function () {
     const texto = document.createElement("span");
     texto.className = "marquee__name";
