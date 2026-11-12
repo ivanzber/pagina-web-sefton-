@@ -1,5 +1,5 @@
 
-const WHATSAPP_NUMERO = "";
+const WHATSAPP_NUMERO = "3123842070";
 const WHATSAPP_MENSAJE = "Hola Sefton, quiero información sobre sus productos.";
 
 function enlaceWhatsApp(mensaje) {
