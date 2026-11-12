@@ -23,7 +23,6 @@ if (!WHATSAPP_NUMERO) {
 
 const MARCAS = [
   { nombre: "Samsung",  logo: "samsung.svg" },
-  { nombre: "Apple",    logo: "apple.svg", mono: true },
   { nombre: "Xiaomi",   logo: "xiaomi.svg" },
   { nombre: "POCO",     logo: "poco.svg" },
   { nombre: "Honor",    logo: "honor.svg", mono: true },
